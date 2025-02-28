@@ -25,7 +25,7 @@
                     <li class="nav-item"><a class="nav-link text-white" href="manageCategory.html">Category</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="manageTest.html">Test</a></li>
                     <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Question</a></li> -->
-                    <li class="nav-item"><a class="nav-link text-white" href="take-test.html">Take Test</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link text-white" href="take-test.html">Take Test</a></li> -->
                 </ul>
                 <form class="form-inline ml-3">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search test">
@@ -36,9 +36,23 @@
     <!-- Main section -->
     <div class="container my-5 mb-0">
         <h2 class="mb-4">Manage Tests</h2>
-        <button class="btn btn-primary mb-3">
-            <a href="test.html" class="text-white link-underline link-underline-opacity-0">Add New Test</a>
-        </button>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-primary mb-3">
+                <a href="test.html" class="text-white link-underline link-underline-opacity-0">Add New Test</a>
+            </button>
+
+            <div class="d-flex">
+                <select class="form-select mb-3" id="taskOwner" style="width: 150px !important;">
+                    <option value="Doing">Sắp xếp theo</option>
+                    <option value="Người dùng khác">Người dùng khác</option>
+                    <option value="Người dùng khác">Người dùng khác</option>
+                </select>
+                <input class="form-control mb-3 w-75 ms-3" type="search" placeholder="Search by name" aria-label="Search"
+                    style="width: 220px !important">
+
+            </div>
+        </div>
+
 
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
